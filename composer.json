@@ -22,7 +22,7 @@
     "laravel/framework": "^7.0|^8.0"
   },
   "scripts": {
-    "post-install-cmd": [
+    "post-package-install": [
       "ln -s vendor/coddin-web/laravel-stubs/src stubs"
     ]
   },
