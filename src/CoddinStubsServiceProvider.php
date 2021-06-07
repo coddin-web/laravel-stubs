@@ -18,7 +18,7 @@ final class CoddinStubsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../../stubs' => app_path('/stubs')
+                __DIR__ . '/../stubs' => base_path('/stubs')
             ], 'stubs');
         }
     }
