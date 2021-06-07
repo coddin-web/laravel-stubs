@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DummyNamespace;
+
+use Exception;
+
+final class DummyClass extends Exception
+{
+    /**
+     * Report the exception.
+     *
+     * @return bool|null
+     */
+    public function report()
+    {
+        //
+    }
+}

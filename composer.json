@@ -1,31 +1,35 @@
 {
-  "name": "coddin-web/laravel-stubs",
-  "description": "Laravel 7/8 stubs more consistent with PSR-12 and PHP 7/8",
-  "keywords": [
-    "coddin",
-    "laravel",
-    "stubs",
-    "laravel-stubs"
-  ],
-  "homepage": "https://github.com/coddin-web/laravel-stubs",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Marius Posthumus",
-      "email": "marius@coddin.nl",
-      "homepage": "https://coddin.nl",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": "^7.0|^8.0",
-    "laravel/framework": "^7.0|^8.0"
-  },
-  "scripts": {
-    "post-package-install": [
-      "ln -s vendor/coddin-web/laravel-stubs/src stubs"
-    ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "coddin-web/laravel-stubs",
+    "description": "Laravel 7/8 stubs more consistent with PSR-12 and PHP 7/8",
+    "keywords": [ "coddin", "laravel", "stubs", "laravel-stubs" ],
+    "homepage": "https://github.com/coddin-web/laravel-stubs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marius Posthumus",
+            "email": "marius@coddin.nl",
+            "homepage": "https://coddin.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Coddin\\Stubs\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coddin\\Stubs\\CoddinStubsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
