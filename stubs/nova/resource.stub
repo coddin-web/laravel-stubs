@@ -10,7 +10,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Resource;
 
 /**
- * @extends Resource<{{ class }}>
+ * @extends Resource<\{{ namespacedModel }}>
  */
 final class {{ class }} extends Resource
 {
