@@ -28,6 +28,7 @@ final class CoddinStubsServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Console\InstallCommand::class,
+                Console\UpdateCommand::class,
             ]);
         }
     }
